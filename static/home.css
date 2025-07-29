@@ -1,0 +1,78 @@
+*{
+    background-color: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            /* min-height: 100%; */
+            object-fit: cover;
+            z-index: -1;
+            filter: brightness(0.1);
+        }
+html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+.content{
+    display: flex;
+    border: 2px solid green;
+    height: 99vh;
+    width: 99.5vw;
+    justify-content: center;
+    position: relative;
+    
+}
+.navbar{
+    width: 100vw;
+    height: 70px;
+    /* background-color: black; */
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 50px;
+}
+.logo img{
+    width: 50px;
+    border-radius: 100%;
+    border: 2px solid white;
+    filter: invert(1);
+
+}
+.speaker{
+    position: absolute;
+    margin-top: 150px;
+}
+.mic{
+    /* padding: 70px; */
+    height: 220px;
+    width: 220px;
+    border-radius: 100%;
+   
+    background: none;
+    justify-content: center;
+    
+}
+#mic{
+    width: 200px;
+    border-radius: 100%;
+}
+.output{
+    position: absolute;
+    top: 10%;
+    right: 50px;
+    height: 450px;
+    width: 400px;
+    background-color: indigo;
+}
