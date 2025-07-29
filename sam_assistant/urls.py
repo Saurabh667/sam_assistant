@@ -19,8 +19,11 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from sam_assistant import views
+from .views import call_ai
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home)
+    path('',views.home),
+    path('call-ai/', call_ai, name='call_ai'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
