@@ -3,17 +3,13 @@ from django.shortcuts import render,redirect
 import speech_recognition as sr
 import webbrowser
 import pyttsx3
-# import music_library
 import requests
 from openai import OpenAI
 from datetime import datetime
 import pyjokes
 import wikipedia
 import openai
-import tkinter as tk
 import os
-import smtplib
-from email.message import EmailMessage
 import pyaudio
 from dotenv import load_dotenv
 from django.http import JsonResponse
